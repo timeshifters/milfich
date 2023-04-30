@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+  <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+body{
+  font-family: 'Roboto', sans-serif;
+}
+/*------------- background image css */
+.fullscreen-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.fullscreen-img img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+}
+.buttons{
+    position: absolute;
+    top: 20%;
+    right:3%;
+
+}
+
+
+
+/*------------------ button style css */
+.buttons a {
+    text-decoration: none;
+    color:#fff;
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffe484;
+    border-color: #ffe484;
+    padding: 15px 40px;
+    background: #563d7c;
+    transition:0.3s;
+    border-radius:5px;
+}
+.buttons a:hover {
+  color: #2a2730;
+    background-color: #ffe484;
+    border-color: #ffe484;
+}
+
+
+/*-------------------------------- slidly responsive for mobile devices */
+@media only screen and (max-width: 667px) {
+  .fullscreen-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height:70vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.buttons{
+    right:0%;
+    margin: 0px 5px;
+}
+}
+
+  </style>
+
+
+</head>
+<body>
+    <div class="fullscreen-img">
+      <!--------------------------------- img path -->
+        <img src="project.jpg" alt="your-image-description">
+       <div class="buttons">
+        <!--------------------------------- button link -->
+        <a href="">More Info</a>
+       </div>
+      </div>
+</body>
+</html>
